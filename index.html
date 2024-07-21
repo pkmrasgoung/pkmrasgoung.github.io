@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +22,7 @@
       href="./public/images/logo.webp"
       type="image/x-icon"
     />
+
     <title>Rasgo</title>
   </head>
   <body>
@@ -39,6 +40,7 @@
       </a>
       <ul
         class="flex gap-10 font-OpenSans capitalize text-white text-sm md:text-lg"
+        id="navbar-menu"
       >
         <li>
           <a href="#" class="hover:underline hover:text-gray-300 transition-all"
@@ -53,7 +55,10 @@
           >
         </li>
         <li>
-          <a href="#" class="hover:underline hover:text-gray-300 transition-all"
+          <a
+            href="https://api.whatsapp.com/send/?phone=6289612062990&text&type=phone_number&app_absent=0"
+            class="hover:underline hover:text-gray-300 transition-all"
+            target="_blank"
             >Hubungi Kami</a
           >
         </li>
@@ -62,18 +67,17 @@
 
     <!-- Content -->
     <main
-      class="h-screen relative w-full bg-cover bg-center"
+      class="h-screen relative w-full bg-cover bg-center scrolled"
       style="background-image: url(./public/images/hero1.webp)"
     >
       <div class="absolute inset-0 bg-black opacity-75"></div>
-      <!-- <div class="h-36"></div> -->
       <div
         class="relative z-10 text-white flex flex-col justify-center items-center h-full gap-2 text-center p-6"
       >
         <h3 class="font-Monserrat text-5xl font-semibold text-accentColor">
           Rasgo
         </h3>
-        <span class="text-xl">Nasi merah & Pisang goroho</span>
+        <span class="text-xl" id="typed-out">Beras merah & Pisang goroho</span>
         <p class="w-full text-gray-50 lg:w-1/2">
           Perpaduan sempurna antara beras merah yang kaya serat dan pisang
           Goroho yang unik dari Sulawesi Utara. pilihan terbaik dan Solusi bagi
@@ -82,46 +86,92 @@
       </div>
     </main>
 
-    <!-- Product Section
-    <section class="p-4 flex flex-wrap w-dvh" id="product">
-      <div class="w-full h-64 p-4 md:w-64 md:h-full border">
-        <div class="w-auto h-full overflow-hidden">
+    <!-- Product Section -->
+    <section
+      class="p-4 flex flex-wrap w-dvh bg-accentColor justify-center"
+      id="product"
+    >
+      <h2
+        class="font-Monserrat font-semibold text-secondaryColor text-2xl lg:text-3xl w-full text-center"
+      >
+        Produk Kami
+      </h2>
+      <div class="w-64 h-auto p-4 flex flex-wrap">
+        <div class="w-auto h-auto overflow-hidden">
           <img
             src="./public/images/product1.jpeg"
-            alt=""
-            class="object-cover object-center"
+            alt="Rasgo Product"
+            class="object-cover object-center hover:brightness-75 transition duration-200 ease-in-out"
+            id="product-image"
           />
         </div>
       </div>
-    </section> -->
+      <div class="w-64 h-auto p-4 flex flex-wrap">
+        <div
+          class="w-auto h-auto overflow-hidden hover:brightness-75 transition duration-200 ease-in-out"
+        >
+          <img
+            src="./public/images/product2.jpeg"
+            alt="Rasgo Product"
+            class="object-cover object-center"
+            id="product-image"
+          />
+        </div>
+      </div>
+      <div class="w-64 h-auto p-4 flex flex-wrap">
+        <div class="h-full overflow-hidden">
+          <img
+            src="./public/images/example.jpeg"
+            alt="Rasgo Product"
+            class="object-cover object-center h-full hover:brightness-75 transition duration-200 ease-in-out"
+            id="product-image"
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="w-full bg-primaryColor py-3 px-4">
+    <footer
+      class="w-full bg-primaryColor py-3 px-6 lg:flex lg:justify-between items-center"
+    >
+      <p class="capitalize font-Monserrat text-white hidden lg:block">
+        kunjugi sosial media kami
+      </p>
       <ul
-        class="flex justify-evenly text-accentColor text-xs md:text-base capitalize font-Monserrat"
+        class="flex gap-4 text-accentColor text-xs md:text-base capitalize font-Monserrat justify-center pr-12"
       >
         <li>
-          <a href="https://instagram.com/pkmrasgo.ung" target="_blank"
-            >instagram</a
+          <a
+            href="https://instagram.com/pkmrasgo.ung"
+            target="_blank"
+            class="flex items-center gap-1 hover:text-accentColor transition duration-200 ease-in"
+          >
+            <img src="./public/images/instagram.png" width="32px " alt="" />
+            instagram</a
           >
         </li>
         <li>
           <a
-            href="https://api.whatsapp.com/send/?phone=6289612062990&text&type=phone_number&app_absent=0"
+            href="https://www.tiktok.com/@pkmrasgo.ung"
             target="_blank"
-            >Whatsapp</a
-          >
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@pkmrasgo.ung" target="_blank"
-            >tiktok</a
+            class="flex items-center gap-1 hover:text-accentColor transition duration-200 ease-in"
+            ><img
+              src="./public/images/tiktok.png"
+              width="26px "
+              alt=""
+            />tiktok</a
           >
         </li>
         <li>
           <a
             href="https://www.facebook.com/profile.php?id=61559171013500&ref=xav_ig_profile_web"
             target="_blank"
-            >facebook</a
+            class="flex items-center gap-1 hover:text-accentColor transition duration-200 ease-in"
+            ><img
+              src="./public/images/facebook.png"
+              width="28px "
+              alt=""
+            />facebook</a
           >
         </li>
       </ul>
@@ -134,6 +184,6 @@
     >
       <img src="./public/images/whatsapp.webp" alt="" width="34px" />
     </a>
-    <!-- <script src="./script.js"></script> -->
+    <script src="./public/script.js"></script>
   </body>
 </html>
