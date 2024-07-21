@@ -1,9 +1,6 @@
 # Node modules directory
 node_modules/
 
-# Tailwind CSS output files (if you are using a build process)
-public/styles.css
-
 # Log files
 npm-debug.log*
 yarn-debug.log*
@@ -15,6 +12,3 @@ Thumbs.db
 
 # Environment variables
 .env
-
-# Tailwind configuration
-tailwind.config.js
